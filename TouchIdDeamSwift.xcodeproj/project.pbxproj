@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB173D7820A6E0B400EB28E7 /* SAMKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = DB173D7420A6E0B400EB28E7 /* SAMKeychainQuery.m */; };
+		DB173D7920A6E0B400EB28E7 /* SAMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = DB173D7720A6E0B400EB28E7 /* SAMKeychain.m */; };
 		DB8DA82920A68559007D68E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8DA82820A68559007D68E1 /* AppDelegate.swift */; };
 		DB8DA82B20A68559007D68E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8DA82A20A68559007D68E1 /* ViewController.swift */; };
 		DB8DA82E20A68559007D68E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB8DA82C20A68559007D68E1 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		DB8DA83320A6855A007D68E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB8DA83120A6855A007D68E1 /* LaunchScreen.storyboard */; };
 		DB8DA83E20A6855A007D68E1 /* TouchIdDeamSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8DA83D20A6855A007D68E1 /* TouchIdDeamSwiftTests.swift */; };
 		DB8DA84920A6855A007D68E1 /* TouchIdDeamSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8DA84820A6855A007D68E1 /* TouchIdDeamSwiftUITests.swift */; };
+		DB8DA85720A6B2AF007D68E1 /* TouchIdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8DA85620A6B2AF007D68E1 /* TouchIdManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB173D7220A6DFAA00EB28E7 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		DB173D7420A6E0B400EB28E7 /* SAMKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMKeychainQuery.m; sourceTree = "<group>"; };
+		DB173D7520A6E0B400EB28E7 /* SAMKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMKeychain.h; sourceTree = "<group>"; };
+		DB173D7620A6E0B400EB28E7 /* SAMKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMKeychainQuery.h; sourceTree = "<group>"; };
+		DB173D7720A6E0B400EB28E7 /* SAMKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMKeychain.m; sourceTree = "<group>"; };
 		DB8DA82520A68559007D68E1 /* TouchIdDeamSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchIdDeamSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8DA82820A68559007D68E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB8DA82A20A68559007D68E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,7 @@
 		DB8DA84420A6855A007D68E1 /* TouchIdDeamSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchIdDeamSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8DA84820A6855A007D68E1 /* TouchIdDeamSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIdDeamSwiftUITests.swift; sourceTree = "<group>"; };
 		DB8DA84A20A6855A007D68E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB8DA85620A6B2AF007D68E1 /* TouchIdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIdManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +83,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB173D7320A6E0B400EB28E7 /* SAMKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				DB173D7420A6E0B400EB28E7 /* SAMKeychainQuery.m */,
+				DB173D7520A6E0B400EB28E7 /* SAMKeychain.h */,
+				DB173D7620A6E0B400EB28E7 /* SAMKeychainQuery.h */,
+				DB173D7720A6E0B400EB28E7 /* SAMKeychain.m */,
+			);
+			path = SAMKeychain;
+			sourceTree = "<group>";
+		};
 		DB8DA81C20A68559007D68E1 = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +117,11 @@
 		DB8DA82720A68559007D68E1 /* TouchIdDeamSwift */ = {
 			isa = PBXGroup;
 			children = (
+				DB173D7320A6E0B400EB28E7 /* SAMKeychain */,
 				DB8DA82820A68559007D68E1 /* AppDelegate.swift */,
 				DB8DA82A20A68559007D68E1 /* ViewController.swift */,
+				DB173D7220A6DFAA00EB28E7 /* Bridge.h */,
+				DB8DA85620A6B2AF007D68E1 /* TouchIdManager.swift */,
 				DB8DA82C20A68559007D68E1 /* Main.storyboard */,
 				DB8DA82F20A6855A007D68E1 /* Assets.xcassets */,
 				DB8DA83120A6855A007D68E1 /* LaunchScreen.storyboard */,
@@ -256,6 +279,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB173D7820A6E0B400EB28E7 /* SAMKeychainQuery.m in Sources */,
+				DB8DA85720A6B2AF007D68E1 /* TouchIdManager.swift in Sources */,
+				DB173D7920A6E0B400EB28E7 /* SAMKeychain.m in Sources */,
 				DB8DA82B20A68559007D68E1 /* ViewController.swift in Sources */,
 				DB8DA82920A68559007D68E1 /* AppDelegate.swift in Sources */,
 			);
@@ -430,7 +456,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TouchIdDeamSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -438,6 +466,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.dogdog.com.TouchIdDeamSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = TouchIdDeamSwift/Bridge.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -447,7 +478,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TouchIdDeamSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +488,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.dogdog.com.TouchIdDeamSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = TouchIdDeamSwift/Bridge.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
